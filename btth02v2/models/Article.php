@@ -1,118 +1,99 @@
 <?php
-class Article
-{
+class Article{
     // Thuộc tính
-    private $art_id;
-    private $title;
-    private $song;
-    private $cat_id;
-    private $summary;
-    private $content;
-    private $aut_id;
-    private $date;
-    private $picture;
 
-    public function __construct($art_id, $title, $song, $cat_id, $summary, $content, $aut_id, $date, $picture)
-    {
-        $this->art_id = $art_id;
-        $this->title = $title;
-        $this->song = $song;
-        $this->cat_id = $cat_id;
-        $this->summary = $summary;
-        $this->content = $content;
-        $this->aut_id = $aut_id;
-        $this->date = $date;
-        $this->picture = $picture;
+    private $ma_bviet;
+    private $tieude;
+    private $ten_bhat;
+    private $ma_tloai;
+    private $tomtat;
+    private $noidung;
+    private $ma_tgia;
+    private $ngayviet;
+    private $hinhanh;
+
+    public function __construct($ma_bviet = null, $tieude= null,$ten_bhat= null,$ma_tloai= null,$tomtat= null,$noidung= null,$ma_tgia= null,$ngayviet= null, $hinhanh= null){
+        $this->ma_bviet = $ma_bviet;
+        $this->tieude = $tieude;
+        $this->ten_bhat = $ten_bhat;
+        $this->ma_tloai = $ma_tloai;
+        $this->tomtat = $tomtat;
+        $this->noidung = $noidung;
+        $this->ma_tgia = $ma_tgia;
+        $this->ngayviet = $ngayviet;
+        $this->hinhanh = $hinhanh;
     }
 
     // Setter và Getter
-    public function getArtId()
-    {
-        return $this->art_id;
-    }
+    public function getMaBviet() {
+     return $this->ma_bviet;
+ }
 
-    public function setArtId($id)
-    {
-        $this->art_id = $art_id;
-    }
+ public function setMaBviet($ma_bviet) {
+     $this->ma_bviet = $ma_bviet;
+ }
 
-    public function getTitle()
-    {
-        return $this->title;
-    }
+ public function getTieude() {
+     return $this->tieude;
+ }
 
-    public function setTitle($title)
-    {
-        $this->title = $title;
-    }
+ public function setTieude($tieude) {
+     $this->tieude = $tieude;
+ }
 
-    public function getSong()
-    {
-        return $this->song;
-    }
+ public function getTenBhat() {
+     return $this->ten_bhat;
+ }
 
-    public function setSong($song)
-    {
-        $this->song = $song;
-    }
+ public function setTenBhat($ten_bhat) {
+     $this->ten_bhat = $ten_bhat;
+ }
 
-    public function getCatId()
-    {
-        return $this->cat_id;
-    }
+ public function getMaTloai() {
+     return $this->ma_tloai;
+ }
 
-    public function setCatId($cat_id)
-    {
-        $this->cat_id = $cat_id;
-    }
+ public function setMaTloai($ma_tloai) {
+     $this->ma_tloai = $ma_tloai;
+ }
 
-    public function getSummary()
-    {
-        return $this->summary;
-    }
+ public function getTomtat() {
+     return $this->tomtat;
+ }
 
-    public function setSummary($summary)
-    {
-        $this->summary = $summary;
-    }
+ public function setTomtat($tomtat) {
+     $this->tomtat = $tomtat;
+ }
 
-    public function getContent()
-    {
-        return $this->content;
-    }
+ public function getNoidung() {
+     return $this->noidung;
+ }
 
-    public function setContent($content)
-    {
-        $this->content = $content;
-    }
+ public function setNoidung($noidung) {
+     $this->noidung = $noidung;
+ }
 
-    public function getAutId()
-    {
-        return $this->aut_id;
-    }
+ public function getMaTgia() {
+     return $this->ma_tgia;
+ }
 
-    public function setAutId($aut_id)
-    {
-        $this->aut_id = $aut_id;
-    }
+ public function setMaTgia($ma_tgia) {
+     $this->ma_tgia = $ma_tgia;
+ }
 
-    public function getDate()
-    {
-        return $this->date;
-    }
+ public function getNgayviet() {
+     return $this->ngayviet;
+ }
 
-    public function setDate($date)
-    {
-        $this->date = $date;
-    }
+ public function setNgayviet($ngayviet) {
+     $this->ngayviet = $ngayviet;
+ }
 
-    public function getPicture()
-    {
-        return $this->picture;
-    }
+ public function getHinhanh() {
+     return $this->hinhanh;
+ }
 
-    public function setPicture($picture)
-    {
-        $this->picture = $picture;
-    }
+ public function setHinhanh($hinhanh) {
+     $this->hinhanh = $hinhanh;
+ }
 }
